@@ -18,7 +18,8 @@ header {
 }
 
 .logo {
-    height: 40px;
+    height: 50px;
+    width: 100px;
 }
 
 .menu-toggle {
@@ -69,7 +70,7 @@ nav a:hover::after {
 
 /* Hero Section */
 .hero {
-    background-color: #e0f7fa;
+    background-color: whitesmoke;
     padding: 60px 20px;
     text-align: center;
 }
@@ -83,6 +84,33 @@ nav a:hover::after {
     font-size: 18px;
     margin: 10px 0 30px;
 }
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Supaya responsif di mobile */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hero .text {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.hero .image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 /* Button */
 .btn {
@@ -140,3 +168,96 @@ footer {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
+
+.services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007acc;
+    font-size: 18px;
+}
+
+.order-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.card .order-btn {
+    display: block;
+    margin: 15px auto 0; /* Atas auto bawah 0 supaya ia berada di tengah */
+}
+
+.order-btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+.example-images {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.example-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.example-images img:hover {
+    transform: scale(1.05);
+}
+
